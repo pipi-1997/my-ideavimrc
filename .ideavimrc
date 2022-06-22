@@ -34,31 +34,31 @@ vmap jk <Esc>
 
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
 
-noremap ,xm :action SearchEverywhere<CR>
-noremap ,ci :action CommentByLineComment<CR>
-noremap ,xs :action SaveAll<CR>
-noremap ,yy :action PasteMultiple<CR>
-noremap ,qq :action FindInPath<CR>
-noremap ,ss :action Find<CR>
-noremap ,fp :action CopyPaths<CR>
-noremap ,xk :action CloseEditor<CR>
-noremap ,rr :action RecentFiles<CR>
-noremap ,kk :action GotoFile<CR>
-noremap ,ii :action GotoSymbol<CR>
+noremap <leader>xm :action SearchEverywhere<CR>
+noremap <leader>ci :action CommentByLineComment<CR>
+noremap <leader>xs :action SaveAll<CR>
+noremap <leader>yy :action PasteMultiple<CR>
+noremap <leader>qq :action FindInPath<CR>
+noremap <leader>ss :action Find<CR>
+noremap <leader>fp :action CopyPaths<CR>
+noremap <leader>xk :action CloseEditor<CR>
+noremap <leader>rr :action RecentFiles<CR>
+noremap <leader>kk :action GotoFile<CR>
+noremap <leader>ii :action GotoSymbol<CR>
 noremap <C-]> :action GotoImplementation<CR>
-noremap ,xz :action ActivateTerminalToolWindow<CR>
+noremap <leader>xz :action ActivateTerminalToolWindow<CR>
 
 " ideavim don't support numberic character in hotkey in 0.55
 " it's fixed in 0.55.1
-noremap ,x1 <C-W>o
-noremap ,x2 :split<CR>
-noremap ,x3 :vsplit<CR>
-noremap ,x0 :q<CR>
-" move window
-noremap ,wh <C-W>h
-noremap ,wl <C-W>l
-noremap ,wj <C-W>j
-noremap ,wk <C-W>k
-noremap ,vv :action EditorSelectWord<CR>
-noremap ,zz :action EditorUnSelectWord<CR>
+noremap <leader>x1 <C-W>o
+noremap <leader>x2 :split<CR>
+noremap <leader>x3 :vsplit<CR>
+noremap <leader>x0 :q<CR>
 
+noremap <leader>vv :action EditorSelectWord<CR>
+noremap <leader>zz :action EditorUnSelectWord<CR>
+
+map <leader>w [w
+map <leader>e ]w
+map <leader>b [b
+map gh :action QuickJavaDoc<CR>
