@@ -47,6 +47,9 @@ noremap <leader>kk :action GotoFile<CR>
 noremap <leader>ii :action GotoSymbol<CR>
 noremap <C-]> :action GotoImplementation<CR>
 noremap <leader>xz :action ActivateTerminalToolWindow<CR>
+noremap <leader>ff :action ToggleZenMode<CR>
+
+vmap <leader>rn :action RenameElement<CR>
 
 " ideavim don't support numberic character in hotkey in 0.55
 " it's fixed in 0.55.1
