@@ -34,6 +34,10 @@ vmap jk <Esc>
 
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
 
+noremap gd :action GotoImplementation<CR>
+noremap gr :action GotoDeclaration<CR>
+noremap gi :action GotoTypeDeclaration<CR>
+noremap <leader>nr :action GotoNextError<CR>
 noremap <leader>xm :action SearchEverywhere<CR>
 noremap <leader>ci :action CommentByLineComment<CR>
 noremap <leader>xs :action SaveAll<CR>
@@ -41,14 +45,19 @@ noremap <leader>yy :action PasteMultiple<CR>
 noremap <leader>qq :action FindInPath<CR>
 noremap <leader>ss :action Find<CR>
 noremap <leader>fp :action CopyPaths<CR>
-noremap <leader>xk :action CloseEditor<CR>
 noremap <leader>rr :action RecentFiles<CR>
 noremap <leader>kk :action GotoFile<CR>
 noremap <leader>ii :action GotoSymbol<CR>
-noremap <C-]> :action GotoImplementation<CR>
-noremap <leader>xz :action ActivateTerminalToolWindow<CR>
 noremap <leader>ff :action ToggleZenMode<CR>
 noremap <leader>tp :action ActivateTerminalToolWindow<CR>
+nnoremap <Leader>rr :action RecentProjectListGroup<CR>
+
+nnoremap <leader>gb :action Back<CR>
+nnoremap <leader>gl :action Forward<CR>
+nnoremap <leader>gi :action GotoImplementation<CR>
+
+noremap <leader>cc :action CloseEditor<CR>
+noremap <leader>ca :action CloseAllEditors<CR>
 
 vmap <leader>rn :action RenameElement<CR>
 vmap <leader>tp :action ActivateTerminalToolWindow<CR>
@@ -59,6 +68,7 @@ noremap <leader>x1 <C-W>o
 noremap <leader>x2 :split<CR>
 noremap <leader>x3 :vsplit<CR>
 noremap <leader>x0 :q<CR>
+noremap <leader>mv :action MoveEditorToOppositeTabGroup<CR>
 
 noremap <leader>vv :action EditorSelectWord<CR>
 noremap <leader>zz :action EditorUnSelectWord<CR>
