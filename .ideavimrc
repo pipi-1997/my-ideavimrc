@@ -34,9 +34,7 @@ vmap jk <Esc>
 
 "@see https://youtrack.jetbrains.com/issue/VIM-510 on expand selected region. Press `Ctrl-W` and `Ctrl-Shift-W` to increase and decrease selected region
 
-noremap gd :action GotoImplementation<CR>
-noremap gr :action GotoDeclaration<CR>
-noremap gi :action GotoTypeDeclaration<CR>
+noremap gi :action GotoImplementation<CR>
 noremap <leader>nr :action GotoNextError<CR>
 noremap <leader>xm :action SearchEverywhere<CR>
 noremap <leader>ci :action CommentByLineComment<CR>
